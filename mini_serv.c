@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		putstr("Fatal error\n", 2);
 	if (listen(serverfd, 10) != 0)
 		putstr("Fatal error\n", 2);
-    FD_ZERO(&old_fd);
+    	FD_ZERO(&old_fd);
 	FD_ZERO(&new_fd);
 	FD_SET(serverfd, &new_fd);
 	fd_size = serverfd;
@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 			}
 			else
 			{
-                bzero(buffer, 200000);
+                		bzero(buffer, 200000);
 				bzero(buffer2, 150000);
 				readed = 1;
 				while (readed == 1 && (!buffer2[0] || buffer2[strlen(buffer2) - 1] != '\n'))
