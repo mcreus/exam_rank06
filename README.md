@@ -1,6 +1,7 @@
 ✅ validated 100% ✅
 
 Pour tester le programme:
+
 -Lancer le programme suivi, en argument, du port choisit.
 -Ouvrir au moins deux autres fenetres de terminal et saisir sur chacunes "nc localhost <numero de port>"
 -Apres avoir connecte le premier terminal, lorsaue vous connectez d'autres terminaux il doit y avoir le message "server: client x just arrived\n" sur les terminaux deja connectes.
